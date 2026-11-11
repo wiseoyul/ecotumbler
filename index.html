@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 📌 웹사이트 제목 (원하는 브랜드명으로 수정하세요) -->
+  <title>ECOTUMBLER | 지속 가능한 일상의 시작</title>
+  
+  <!-- CSS 스타일시트 연결 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. 헤더 (네비게이션 바) -->
+  <header class="header">
+    <div class="container header-container">
+      <!-- 📌 로고 영역 -->
+      <a href="#" class="logo">ECOTUMBLER<span>.</span></a>
+      
+      <!-- 📌 메뉴 리스트 -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">브랜드 소개</a></li>
+          <li><a href="#features">제품 특징</a></li>
+          <li><a href="#products">라인업</a></li>
+          <li><a href="#faq">자주 묻는 질문</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 📌 구매하기 버튼 -->
+      <a href="#buy" class="btn btn-primary">구매하기</a>
+    </div>
+  </header>
+
+  <!-- 2. 히어로 섹션 (메인 대문) -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <!-- 📌 메인 헤드카피 (문구를 자유롭게 바꿔보세요) -->
+        <span class="badge">NEW COLLECTION</span>
+        <h1>지속 가능한 하루를 위한<br>가장 완벽한 선택</h1>
+        <p>하루 종일 유지되는 보온·보냉력과 감각적인 디자인.<br>환경을 생각하는 당신의 일상에 특별함을 더합니다.</p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary">제품 둘러보기</a>
+          <a href="#about" class="btn btn-outline">브랜드 스토리</a>
+        </div>
+      </div>
+      <!-- 📌 메인 이미지 (원하는 제품 이미지 경로로 수정: ex. images/hero.png) -->
+      <div class="hero-image">
+        <img src="images/first.jpg" alt="친환경 텀블러 메인 이미지">
+      </div>
+    </div>
+  </section>
+  <!-- 브랜드 스토리 섹션 추가 -->
+<section id="about" class="about section-padding">
+  <div class="container">
+    <div class="section-title">
+      <h2>BRAND STORY</h2>
+      <p>지속 가능한 미래를 위해 작은 실천에서 시작합니다.</p>
+    </div>
+    <div class="about-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <p>ECOTUMBLER는 일회용품 사용을 줄이고, 일상 속에서 자연스럽게 환경을 보호할 수 있는 방법을 고민하며 시작되었습니다. 뛰어난 기능성과 감각적인 디자인으로 매일 들고 싶어지는 최상의 텀블러를 만듭니다.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- 3. 핵심 특징 섹션 (Grid 카드) -->
+  <section id="features" class="features section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>WHY ECOTUMBLER?</h2>
+        <p>디자인과 기능성 모두 놓치지 않은 프리미엄 라인업</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- 특징 카드 1 -->
+        <div class="feature-card">
+          <div class="icon">🔥</div>
+          <h3>24시간 보온 / 12시간 보냉</h3>
+          <p>이중 진공 단열 구조로 처음 담았던 온도를 하루 종일 변함없이 유지해 줍니다.</p>
+        </div>
+        <!-- 특징 카드 2 -->
+        <div class="feature-card">
+          <div class="icon">🌱</div>
+          <h3>100% 친환경 소재</h3>
+          <p>BPA FREE 최고급 스테인리스 316 소재를 사용하여 환경호르몬 걱정이 없습니다.</p>
+        </div>
+        <!-- 특징 카드 3 -->
+        <div class="feature-card">
+          <div class="icon">💧</div>
+          <h3>완벽한 밀폐 & 노수분</h3>
+          <p>특수 실리콘 패킹으로 가방 속에서도 음료가 샐 염려 없이 안심하고 휴대하세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 제품 필터 탭 섹션 (JavaScript 인터랙션 구현용) -->
+  <section id="products" class="products section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>PRODUCTS</h2>
+        <p>당신의 라이프스타일에 맞는 용량을 선택해보세요.</p>
+      </div>
+
+      <!-- 📌 탭 버튼 (JS로 클릭 이벤트 제어) -->
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-category="all">전체보기</button>
+        <button class="tab-btn" data-category="daily">데일리 (350ml)</button>
+        <button class="tab-btn" data-category="grand">그란데 (500ml)</button>
+      </div>
+
+      <!-- 📌 제품 리스트 -->
+      <div class="product-grid">
+        <!-- 상품 1 -->
+        <div class="product-card" data-category="daily">
+          <div class="product-img">
+            <img src="images/blue.jpg" alt="매트 블루 텀블러">
+          </div>
+          <div class="product-info">
+            <span class="category">Daily 350ml</span>
+            <h4>매트 블루 에디션</h4>
+            <p class="price">32,000원</p>
+          </div>
+        </div>
+        <!-- 상품 2 -->
+        <div class="product-card" data-category="grand">
+          <div class="product-img">
+            <img src="images/black.jpg" alt="매트 블랙 텀블러">
+          </div>
+          <div class="product-info">
+            <span class="category">Grande 500ml</span>
+            <h4>매트 블랙 에디션</h4>
+            <p class="price">38,000원</p>
+          </div>
+        </div>
+        <!-- 상품 3 -->
+        <div class="product-card" data-category="daily">
+          <div class="product-img">
+            <img src="images/green.jpg" alt="올리브 그린 텀블러">
+          </div>
+          <div class="product-info">
+            <span class="category">Daily 350ml</span>
+            <h4>포레스트 올리브</h4>
+            <p class="price">32,000원</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FAQ 아코디언 섹션 (JS 아코디언 동작) -->
+  <section id="faq" class="faq section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>FAQ</h2>
+        <p>자주 궁금해하시는 내용을 정리했습니다.</p>
+      </div>
+
+      <div class="accordion">
+        <!-- 질문 1 -->
+        <div class="accordion-item">
+          <button class="accordion-header">세척 및 식기세척기 사용이 가능한가요? <span class="arrow">↓</span></button>
+          <div class="accordion-content">
+            <p>본체는 손세척을 권장하며, 뚜껑 부분은 식기세척기 상단에 넣어 세척이 가능합니다.</p>
+          </div>
+        </div>
+        <!-- 질문 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header">A/S 보증 기간은 어떻게 되나요? <span class="arrow">↓</span></button>
+          <div class="accordion-content">
+            <p>구매일로부터 1년간 보온·보냉 불량에 대해 무상 A/S 또는 교환을 보장합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ECOTUMBLER. Portfolio Project by [위서율]</p>
+    </div>
+  </footer>
+
+  <!-- JS 파일 연결 -->
+  <script src="js/script.js"></script>
+</body>
+</html>
